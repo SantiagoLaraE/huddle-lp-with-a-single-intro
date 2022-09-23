@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a Frontend Mentor Challenge, Huddle landing page with single introductory section">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header>
+    <img src="./images/logo.svg" alt="Logo Huddle" class="header__logo" width="264" height="65,33">
+  </header>
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
+  <main class="intro">
+    <img class="intro__img" src="./images/illustration-mockups.svg" alt="Illustration Mockups" width="709" height="506">
+    <section class="intro__text">
+      <h1 class="intro__title">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="intro__description">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <a href="#" class="intro__btn" aria-label="Register to Huddle">Register</a>
+    </section>
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <nav class="footer__social-media facebook">
+      <a href="#" class="social__icon" aria-label="Go to Facebook">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.9902 8.4375L11.4068 5.72285H8.80205V3.96123C8.80205 3.21855 9.16592 2.49463 10.3325 2.49463H11.5167V0.183398C11.5167 0.183398 10.4421 0 9.41465 0C7.26953 0 5.86738 1.3002 5.86738 3.65391V5.72285H3.48291V8.4375H5.86738V15H8.80205V8.4375H10.9902Z" />
+        </svg>
+      </a>
+      <a href="#" class="social__icon twitter" aria-label="Go to Twitter">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.4581 4.44484C13.4676 4.57809 13.4676 4.71136 13.4676 4.8446C13.4676 8.90866 10.3744 13.5914 4.72081 13.5914C2.97905 13.5914 1.36104 13.087 0 12.2114C0.247471 12.2399 0.485391 12.2494 0.742383 12.2494C2.17954 12.2494 3.50253 11.764 4.559 10.936C3.20748 10.9074 2.07486 10.0223 1.68463 8.80398C1.875 8.83252 2.06534 8.85156 2.26523 8.85156C2.54124 8.85156 2.81728 8.81348 3.07424 8.74688C1.66562 8.46133 0.609111 7.22403 0.609111 5.72975V5.69169C1.01836 5.92012 1.49429 6.06288 1.99869 6.08189C1.17064 5.52985 0.628154 4.58761 0.628154 3.52161C0.628154 2.95056 0.78041 2.42708 1.04692 1.97022C2.56025 3.8357 4.83501 5.05395 7.38574 5.18723C7.33816 4.9588 7.3096 4.72088 7.3096 4.48293C7.3096 2.78875 8.68017 1.40869 10.3838 1.40869C11.269 1.40869 12.0685 1.77988 12.63 2.3795C13.3248 2.24626 13.991 1.98927 14.5812 1.63712C14.3527 2.35097 13.8673 2.95059 13.2296 3.33127C13.8483 3.26468 14.4479 3.09332 14.9999 2.8554C14.5812 3.46451 14.0577 4.007 13.4581 4.44484V4.44484Z" />
+        </svg>
+      </a>
+      <a href="#" class="social__icon instagram" aria-label="Go to Instagram">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_178_42)">
+            <path
+              d="M7.50317 4.1311C5.63989 4.1311 4.13696 5.63403 4.13696 7.49731C4.13696 9.3606 5.63989 10.8635 7.50317 10.8635C9.36646 10.8635 10.8694 9.3606 10.8694 7.49731C10.8694 5.63403 9.36646 4.1311 7.50317 4.1311ZM7.50317 9.68579C6.29907 9.68579 5.3147 8.70435 5.3147 7.49731C5.3147 6.29028 6.29614 5.30884 7.50317 5.30884C8.71021 5.30884 9.69165 6.29028 9.69165 7.49731C9.69165 8.70435 8.70728 9.68579 7.50317 9.68579V9.68579ZM11.7922 3.99341C11.7922 4.42993 11.4407 4.77856 11.0071 4.77856C10.5706 4.77856 10.2219 4.427 10.2219 3.99341C10.2219 3.55981 10.5735 3.20825 11.0071 3.20825C11.4407 3.20825 11.7922 3.55981 11.7922 3.99341ZM14.0217 4.79028C13.9719 3.73853 13.7317 2.80688 12.9612 2.03931C12.1936 1.27173 11.262 1.03149 10.2102 0.97876C9.12622 0.917236 5.8772 0.917236 4.79321 0.97876C3.74438 1.02856 2.81274 1.2688 2.04224 2.03638C1.27173 2.80396 1.03442 3.7356 0.981689 4.78735C0.920166 5.87134 0.920166 9.12036 0.981689 10.2043C1.03149 11.2561 1.27173 12.1877 2.04224 12.9553C2.81274 13.7229 3.74146 13.9631 4.79321 14.0159C5.8772 14.0774 9.12622 14.0774 10.2102 14.0159C11.262 13.9661 12.1936 13.7258 12.9612 12.9553C13.7288 12.1877 13.969 11.2561 14.0217 10.2043C14.0833 9.12036 14.0833 5.87427 14.0217 4.79028V4.79028ZM12.6213 11.3674C12.3928 11.9417 11.9504 12.384 11.3733 12.6155C10.509 12.9583 8.45825 12.8792 7.50317 12.8792C6.5481 12.8792 4.49438 12.9553 3.63306 12.6155C3.05884 12.387 2.61646 11.9446 2.38501 11.3674C2.04224 10.5032 2.12134 8.45239 2.12134 7.49731C2.12134 6.54224 2.04517 4.48853 2.38501 3.6272C2.61353 3.05298 3.05591 2.6106 3.63306 2.37915C4.49731 2.03638 6.5481 2.11548 7.50317 2.11548C8.45825 2.11548 10.512 2.03931 11.3733 2.37915C11.9475 2.60767 12.3899 3.05005 12.6213 3.6272C12.9641 4.49146 12.885 6.54224 12.885 7.49731C12.885 8.45239 12.9641 10.5061 12.6213 11.3674Z" />
+          </g>
+          <defs>
+            <clipPath id="clip0_178_42">
+              <rect width="15" height="15" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </nav>
+    <p class="footer__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://santiagolarae.github.io">SantiLara</a>.
     </p>
   </footer>
 </body>
+
 </html>
